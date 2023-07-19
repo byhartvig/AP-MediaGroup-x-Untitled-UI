@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../Css/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="flex justify-center items-center h-20 border-b border-gray-100">
+      <div class="container">
+        <div class="flex items-center gap-9">
+          <!--Logo-->
+          <div class="flex items-center gap-3">
+            <img src="../Utils/Logo.svg" alt="Site logo" class="h-7" />
+            <p class="text-base font-bold">AP MediaGroup</p>
+          </div>
+          <!--Navigation-->
+          <div class="flex items-center gap-3">
+            <ul id="navigationLinks" class="flex items-center gap-3"></ul>
+          </div>
+          <!--Actions-->
+          <div class="flex-1 flex justify-end items-center gap-6">
+            <div
+              class="text-gray-600 font-medium text-lg transition-all duration-300 ease-in-out hover:text-gray-900 cursor-pointer"
+            >
+              <i class="fa-light fa-gear"></i>
+            </div>
+            <div
+              class="text-lg text-gray-600 font-medium transition-all duration-300 ease-in-out hover:text-gray-900 cursor-pointer"
+            >
+              <i class="fa-light fa-bell"></i>
+            </div>
+            <div class="h-9 w-9 rounded-full overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80"
+                alt="Profile picture"
+                class="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex justify-center items-center py-2 border-b border-gray-100"
+      id="subNavWrapper"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <ul id="subNavigationLinks" class="flex items-center gap-3"></ul>
+          <div
+            class="flex items-center gap-2 rounded-md border border-gray-200 px-4 py-2 cursor-pointer transition-all duration-300 ease-in-out hover:bg-gray-100"
+          >
+            <i class="fa-light fa-user-plus text-sm"></i>
+            <p class="text-sm text-gray-800">Invite</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center mt-16">
+      <div class="container">
+        <h1 class="text-4xl font-bold text-gray-800">Customers</h1>
+        <div class="flex mt-8 gap-4">
+          <div
+            class="bg-gray-100 border border-gray-200 gap-1 flex p-1 rounded-md"
+            id="tabsWrapper"
+          ></div>
+          <div
+            class="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 cursor-pointer transition-all duration-300 ease-in-out"
+          >
+            <i class="fa-regular fa-plus"></i>
+            <p class="font-medium">Add view</p>
+          </div>
+        </div>
+        <div class="flex mt-16 gap-16">
+          <div class="w-52">
+            <ul id="sideBarWrapper" class="flex flex-col gap-6"></ul>
+          </div>
+          <div class="flex-1 flex flex-col">
+            <div class="flex items-center justify-between gap-4">
+              <div
+                class="flex-1 bg-white border border-gray-100 p-4 group rounded-lg hover:bg-gray-800 cursor-pointer transition-all duration-200 ease-in-out"
+              >
+                <div
+                  class="flex items-center justify-between group-hover:text-white transition-all duration-200 ease-in-out"
+                >
+                  <p
+                    class="text-sm text-gray-600 font-medium group-hover:text-white transition-all duration-200 ease-in-out"
+                  >
+                    Total customers
+                  </p>
+                  <span
+                    ><i
+                      class="fa-regular fa-ellipsis-vertical text-gray-600 group-hover:text-white transition-all duration-200 ease-in-out"
+                    ></i
+                  ></span>
+                </div>
+                <div
+                  class="flex items-center justify-between group-hover:text-white transition-all duration-200 ease-in-out mt-4"
+                >
+                  <h3
+                    class="text-3xl text-gray-800 font-bold group-hover:text-white transition-all duration-200 ease-in-out"
+                  >
+                    2,420
+                  </h3>
+                  <span
+                    class="py-1 px-3 bg-green-200 text-green-600 text-sm flex font-medium items-center gap-1 rounded-full group-hover:text-white group-hover:bg-gray-600 transition-all duration-200 ease-in-out"
+                    ><i class="fa-regular fa-arrow-up text-xs font-normal"></i>
+                    20%</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex-1 bg-white border border-gray-100 p-4 group rounded-lg hover:bg-gray-800 cursor-pointer transition-all duration-200 ease-in-out"
+              >
+                <div
+                  class="flex items-center justify-between group-hover:text-white transition-all duration-200 ease-in-out"
+                >
+                  <p
+                    class="text-sm text-gray-600 font-medium group-hover:text-white transition-all duration-200 ease-in-out"
+                  >
+                    Members
+                  </p>
+                  <span
+                    ><i
+                      class="fa-regular fa-ellipsis-vertical text-gray-600 group-hover:text-white transition-all duration-200 ease-in-out"
+                    ></i
+                  ></span>
+                </div>
+                <div
+                  class="flex items-center justify-between group-hover:text-white transition-all duration-200 ease-in-out mt-4"
+                >
+                  <h3
+                    class="text-3xl text-gray-800 font-bold group-hover:text-white transition-all duration-200 ease-in-out"
+                  >
+                    1,210
+                  </h3>
+                  <span
+                    class="py-1 px-3 bg-green-200 text-green-600 text-sm flex font-medium items-center gap-1 rounded-full group-hover:text-white group-hover:bg-gray-600 transition-all duration-200 ease-in-out"
+                    ><i class="fa-regular fa-arrow-up text-xs font-normal"></i>
+                    15%</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex-1 bg-white border border-gray-100 p-4 group rounded-lg hover:bg-gray-800 cursor-pointer transition-all duration-200 ease-in-out"
+              >
+                <div
+                  class="flex items-center justify-between group-hover:text-white transition-all duration-200 ease-in-out"
+                >
+                  <p
+                    class="text-sm text-gray-600 font-medium group-hover:text-white transition-all duration-200 ease-in-out"
+                  >
+                    Active now
+                  </p>
+                  <span
+                    ><i
+                      class="fa-regular fa-ellipsis-vertical text-gray-600 group-hover:text-white transition-all duration-200 ease-in-out"
+                    ></i
+                  ></span>
+                </div>
+                <div
+                  class="flex items-center justify-between group-hover:text-white transition-all duration-200 ease-in-out mt-4"
+                >
+                  <h3
+                    class="text-3xl text-gray-800 font-bold group-hover:text-white transition-all duration-200 ease-in-out"
+                  >
+                    316
+                  </h3>
+                  <span
+                    class="py-1 px-3 bg-red-200 text-red-600 text-sm flex font-medium items-center gap-1 rounded-full group-hover:text-white group-hover:bg-gray-600 transition-all duration-200 ease-in-out"
+                    ><i
+                      class="fa-regular fa-arrow-down text-xs font-normal"
+                    ></i>
+                    17%</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-4 border border-gray-100 rounded-lg mt-8 flex justify-between items-center"
+            >
+              <div class="flex gap-2">
+                <div
+                  class="flex items-center py-2 px-4 gap-2 rounded-md border border-gray-100 hover:bg-gray-50 cursor-pointer transition-all duration-200 ease-in-out"
+                >
+                  <p class="text-sm text-gray-800 font-medium">All time</p>
+                  <i class="fa-regular fa-xmark text-xs"></i>
+                </div>
+                <div
+                  class="flex items-center py-2 px-4 gap-2 rounded-md border border-gray-100 hover:bg-gray-50 cursor-pointer transition-all duration-200 ease-in-out"
+                >
+                  <p class="text-sm text-gray-800 font-medium">US, AU +4</p>
+                  <i class="fa-regular fa-xmark text-xs"></i>
+                </div>
+                <div
+                  class="flex items-center py-2 px-4 gap-2 rounded-md border border-gray-100 hover:bg-gray-50 cursor-pointer transition-all duration-200 ease-in-out"
+                >
+                  <i class="fa-regular fa-bars-filter"></i>
+                  <p class="text-sm text-gray-800 font-medium">More filters</p>
+                </div>
+              </div>
+
+              <div class="flex gap-2">
+                <div
+                  class="flex items-center gap-2 border border-gray-100 rounded-lg px-4"
+                >
+                  <i class="fa-regular fa-magnifying-glass text-gray-500"></i>
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    class="border-none outline-none text-sm text-gray-900 placeholder:text-gray-600 w-56"
+                  />
+                </div>
+                <div
+                  class="flex items-center bg-gray-800 gap-2 text-white text-sm font-medium py-2 px-4 rounded-md cursor-pointer"
+                >
+                  <i class="fa-regular fa-plus text-xs font-normal"></i>
+                  <span>Add item</span>
+                </div>
+              </div>
+            </div>
+            <div class="border border-gray-100 rounded-lg mt-8">
+              <div
+                class="p-4 border-b border-gray-100 flex justify-between items-center"
+              >
+                <div class="flex items-center justify-start w-full">
+                  <div class="w-1/12">
+                    <input
+                      type="checkbox"
+                      class="border-gray-200 rounded-sm h-4 w-4"
+                    />
+                  </div>
+                  <div class="w-2/12">
+                    <p class="text-xs text-gray-400 font-medium">Company</p>
+                  </div>
+                  <div class="w-2/12">
+                    <p class="text-xs text-gray-400 font-medium">Status</p>
+                  </div>
+                  <div class="w-5/12">
+                    <p class="text-xs text-gray-400 font-medium">About</p>
+                  </div>
+                  <div class="w-1/12">
+                    <p class="text-xs text-gray-400 font-medium">Rating</p>
+                  </div>
+                  <div class="w-1/12 text-right">
+                    <p class="text-xs text-gray-400 font-medium">Actions</p>
+                  </div>
+                </div>
+              </div>
+              <div id="tableItems"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
