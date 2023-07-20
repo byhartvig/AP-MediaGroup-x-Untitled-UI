@@ -7,7 +7,7 @@ I have decided to follow the hype and start using TailwindCSS, but I was lacking
 
 ## Features
 
-- Fulle responsive
+- Fully responsive
 - Build with TailwindCSS
 - Build with plain HTML
 - Added some Javascript sprinkles at top
