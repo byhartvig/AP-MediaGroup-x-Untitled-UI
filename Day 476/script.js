@@ -176,7 +176,8 @@ function appendTabsToElement(tabs, elementId) {
       'text-gray-600',
       'py-2',
       'px-4',
-      'text-sm',
+      'lg:text-sm',
+      'text-xs',
       'rounded-md',
       'font-medium',
       'transition-all',
@@ -331,7 +332,7 @@ const tableItems = [
     logo: 'https://cdn-1.webcatalog.io/catalog/stripe/stripe-icon-filled-256.png?v=1679560235881',
     name: 'Stripe',
     url: 'Stripe.com',
-    type: 'Failed payment',
+    type: 'Failed',
     typeColor: 'red',
     description: 'Payment processing for the internet',
     aboutHeader: 'Financial tools',
@@ -395,7 +396,7 @@ function appendTableItemsToElement(tableItems, elementId) {
     innerDiv.className = 'flex items-center justify-start w-full';
 
     var checkboxDiv = document.createElement('div');
-    checkboxDiv.className = 'w-1/12';
+    checkboxDiv.className = 'w-1/12 hidden lg:block';
 
     var checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
@@ -405,7 +406,7 @@ function appendTableItemsToElement(tableItems, elementId) {
     innerDiv.appendChild(checkboxDiv);
 
     var logoDiv = document.createElement('div');
-    logoDiv.className = 'w-2/12';
+    logoDiv.className = 'w-1/2 lg:w-2/12';
 
     var logoContainerDiv = document.createElement('div');
     logoContainerDiv.className = 'flex gap-3';
@@ -431,7 +432,7 @@ function appendTableItemsToElement(tableItems, elementId) {
 
     var companySubtitle = document.createElement('span');
     companySubtitle.className = 'text-xs text-gray-600 mt-0';
-    companySubtitle.textContent = item.Linear;
+    companySubtitle.textContent = item.url;
 
     logoTextDiv.appendChild(companyName);
     logoTextDiv.appendChild(companySubtitle);
@@ -441,7 +442,7 @@ function appendTableItemsToElement(tableItems, elementId) {
     innerDiv.appendChild(logoDiv);
 
     var statusDiv = document.createElement('div');
-    statusDiv.className = 'w-2/12 flex';
+    statusDiv.className = 'lg:w-2/12 flex';
 
     var statusBadgeDiv = document.createElement('div');
     statusBadgeDiv.className = `flex items-center justify-start bg-${item.typeColor}-100 rounded-full gap-2 px-2 py-0.5`;
@@ -459,7 +460,7 @@ function appendTableItemsToElement(tableItems, elementId) {
     innerDiv.appendChild(statusDiv);
 
     var descriptionDiv = document.createElement('div');
-    descriptionDiv.className = 'w-5/12 flex flex-col';
+    descriptionDiv.className = 'w-5/12 hidden lg:flex flex-col';
 
     var descriptionTitle = document.createElement('strong');
     descriptionTitle.className = 'text-sm font-medium text-gray-800';
@@ -474,7 +475,7 @@ function appendTableItemsToElement(tableItems, elementId) {
     innerDiv.appendChild(descriptionDiv);
 
     var ratingDiv = document.createElement('div');
-    ratingDiv.className = 'w-1/12 flex gap-2';
+    ratingDiv.className = 'w-1/12 hidden lg:flex gap-2';
 
     //For loop to create x star icons based on rating and if there is a half add this <i class="fa-solid fa-star-half"></i>
     for (let i = 0; i < item.rating; i++) {
@@ -486,7 +487,7 @@ function appendTableItemsToElement(tableItems, elementId) {
     innerDiv.appendChild(ratingDiv);
 
     var ellipsisDiv = document.createElement('div');
-    ellipsisDiv.className = 'w-1/12 text-right';
+    ellipsisDiv.className = ' flex-1 lg:w-1/12 text-right';
 
     var ellipsisText = document.createElement('p');
     ellipsisText.className = 'text-sm text-gray-400 font-medium cursor-pointer';

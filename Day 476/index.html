@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +20,9 @@
   </head>
 
   <body>
-    <div class="flex justify-center items-center h-20 border-b border-gray-100">
+    <div
+      class="flex justify-center items-center h-20 px-3 lg:px-5 xl:px-0 border-b border-gray-100"
+    >
       <div class="container">
         <div class="flex items-center gap-9">
           <!--Logo-->
@@ -25,12 +30,16 @@
             <img src="../Utils/Logo.svg" alt="Site logo" class="h-7" />
             <p class="text-base font-bold">AP MediaGroup</p>
           </div>
+          <!--Mobile navigtion-->
+          <div class="flex flex-1 justify-end items-center lg:hidden">
+            <i class="fa-regular fa-bars"></i>
+          </div>
           <!--Navigation-->
-          <div class="flex items-center gap-3">
+          <div class="hidden items-center gap-3 lg:flex">
             <ul id="navigationLinks" class="flex items-center gap-3"></ul>
           </div>
           <!--Actions-->
-          <div class="flex-1 flex justify-end items-center gap-6">
+          <div class="flex-1 hidden justify-end items-center gap-6 lg:flex">
             <div
               class="text-gray-600 font-medium text-lg transition-all duration-300 ease-in-out hover:text-gray-900 cursor-pointer"
             >
@@ -53,7 +62,7 @@
       </div>
     </div>
     <div
-      class="flex justify-center items-center py-2 border-b border-gray-100"
+      class="hidden lg:flex lg:px-5 xl:px-0 justify-center items-center py-2 border-b border-gray-100"
       id="subNavWrapper"
     >
       <div class="container">
@@ -69,29 +78,33 @@
       </div>
     </div>
 
-    <div class="flex justify-center mt-16">
+    <div class="flex justify-center mt-8 lg:mt-16 lg:px-5 xl:px-0 px-0">
       <div class="container">
-        <h1 class="text-4xl font-bold text-gray-800">Customers</h1>
-        <div class="flex mt-8 gap-4">
+        <h1 class="text-2xl lg:text-4xl font-bold px-3 lg:px-0 text-gray-800">
+          Customers
+        </h1>
+        <div class="flex mt-8 gap-4 md:px-3 lg:px-0">
           <div
-            class="bg-gray-100 border border-gray-200 gap-1 flex p-1 rounded-md"
+            class="bg-gray-100 border hidden md:flex border-gray-200 gap-1 p-1 rounded-md"
             id="tabsWrapper"
           ></div>
           <div
-            class="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 cursor-pointer transition-all duration-300 ease-in-out"
+            class="hidden md:flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 cursor-pointer transition-all duration-300 ease-in-out"
           >
             <i class="fa-regular fa-plus"></i>
             <p class="font-medium">Add view</p>
           </div>
         </div>
-        <div class="flex mt-16 gap-16">
-          <div class="w-52">
+        <div class="flex mt-0 md:mt-8 lg:mt-16 gap-16">
+          <div class="w-52 hidden xl:block">
             <ul id="sideBarWrapper" class="flex flex-col gap-6"></ul>
           </div>
-          <div class="flex-1 flex flex-col">
-            <div class="flex items-center justify-between gap-4">
+          <div class="flex-1 flex flex-col w-screen md:w-auto px-3 lg:px-0">
+            <div
+              class="flex flex-col gap-3 lg:gap-0 md:flex-row w-full items-center justify-between"
+            >
               <div
-                class="flex-1 bg-white border border-gray-100 p-4 group rounded-lg hover:bg-gray-800 cursor-pointer transition-all duration-200 ease-in-out"
+                class="flex-1 w-full flex flex-col bg-white border border-gray-100 p-4 group rounded-lg hover:bg-gray-800 cursor-pointer transition-all duration-200 ease-in-out"
               >
                 <div
                   class="flex items-center justify-between group-hover:text-white transition-all duration-200 ease-in-out"
@@ -123,7 +136,7 @@
                 </div>
               </div>
               <div
-                class="flex-1 bg-white border border-gray-100 p-4 group rounded-lg hover:bg-gray-800 cursor-pointer transition-all duration-200 ease-in-out"
+                class="flex-1 w-full bg-white border border-gray-100 p-4 group rounded-lg hover:bg-gray-800 cursor-pointer transition-all duration-200 ease-in-out"
               >
                 <div
                   class="flex items-center justify-between group-hover:text-white transition-all duration-200 ease-in-out"
@@ -155,7 +168,7 @@
                 </div>
               </div>
               <div
-                class="flex-1 bg-white border border-gray-100 p-4 group rounded-lg hover:bg-gray-800 cursor-pointer transition-all duration-200 ease-in-out"
+                class="flex-1 w-full bg-white border border-gray-100 p-4 group rounded-lg hover:bg-gray-800 cursor-pointer transition-all duration-200 ease-in-out"
               >
                 <div
                   class="flex items-center justify-between group-hover:text-white transition-all duration-200 ease-in-out"
@@ -190,9 +203,9 @@
               </div>
             </div>
             <div
-              class="p-4 border border-gray-100 rounded-lg mt-8 flex justify-between items-center"
+              class="md:p-4 md:border border-gray-100 rounded-lg mt-8 flex-col-reverse md:flex-row flex justify-between items-center"
             >
-              <div class="flex gap-2">
+              <div class="flex gap-2 flex-wrap w-full">
                 <div
                   class="flex items-center py-2 px-4 gap-2 rounded-md border border-gray-100 hover:bg-gray-50 cursor-pointer transition-all duration-200 ease-in-out"
                 >
@@ -206,35 +219,37 @@
                   <i class="fa-regular fa-xmark text-xs"></i>
                 </div>
                 <div
-                  class="flex items-center py-2 px-4 gap-2 rounded-md border border-gray-100 hover:bg-gray-50 cursor-pointer transition-all duration-200 ease-in-out"
+                  class="flex items-center w-full md:w-auto py-2 px-4 gap-2 rounded-md border border-gray-100 hover:bg-gray-50 cursor-pointer transition-all duration-200 ease-in-out"
                 >
                   <i class="fa-regular fa-bars-filter"></i>
                   <p class="text-sm text-gray-800 font-medium">More filters</p>
                 </div>
               </div>
 
-              <div class="flex gap-2">
+              <div
+                class="flex gap-2 w-full mb-2 md:mb-0 md:justify-end flex-wrap md:flex-nowrap"
+              >
                 <div
-                  class="flex items-center gap-2 border border-gray-100 rounded-lg px-4"
+                  class="flex items-center md:gap-2 border border-gray-100 rounded-lg px-4"
                 >
                   <i class="fa-regular fa-magnifying-glass text-gray-500"></i>
                   <input
                     type="text"
                     placeholder="Search"
-                    class="border-none outline-none text-sm text-gray-900 placeholder:text-gray-600 w-56"
+                    class="border-none outline-none text-sm text-gray-900 placeholder:text-gray-600 md:w-56"
                   />
                 </div>
                 <div
-                  class="flex items-center bg-gray-800 gap-2 text-white text-sm font-medium py-2 px-4 rounded-md cursor-pointer"
+                  class="hidden md:flex items-center bg-gray-800 gap-2 text-white text-sm font-medium py-2 px-4 rounded-md cursor-pointer"
                 >
                   <i class="fa-regular fa-plus text-xs font-normal"></i>
-                  <span>Add item</span>
+                  <span class="hidden lg:block">Add item</span>
                 </div>
               </div>
             </div>
             <div class="border border-gray-100 rounded-lg mt-8">
               <div
-                class="p-4 border-b border-gray-100 flex justify-between items-center"
+                class="p-4 border-b border-gray-100 justify-between items-center hidden lg:flex"
               >
                 <div class="flex items-center justify-start w-full">
                   <div class="w-1/12">
